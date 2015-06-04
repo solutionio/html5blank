@@ -20,12 +20,13 @@
 $pesticide-debug: true !default;
 @import "_assets/pesticide";
 
-// Global
+// Assets
 @import "_assets/variables";
 @import "_assets/mixins";
 
 // Modules
+@import "_modules/header";
+@import "_modules/footer";
 
-
-// Partials
+// Templates
 
