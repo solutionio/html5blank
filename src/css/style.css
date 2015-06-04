@@ -1,261 +1,66 @@
-/**
- * styles.scss
- * ---
- * Main `sass` file. Import here `sass` files
- */
-/**
- * modules/variables
- * ---
- */
-/**
- * Typography
- */
-/**
- * Colors
- */
-/**
- * Grid
- */
-/**
- * modules/mixins
- * ---
- */
-/**
- * modules/fonts
- * ---
- * Declare fonts here
- */
 /*
-@font-face {
-  font-family: "Font-Name";
-  src: url("fonts/font-name.eot");
-  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"),
-    url("fonts/font-name.woff") format("woff"),
-    url("fonts/font-name.ttf") format("truetype"),
-    url("fonts/font-name.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+Error: File to import not found or unreadable: ../../bower_components/meyer-reset/stylesheets/meyer-reset.
+       Load paths:
+         /Users/johannes/Documents/CODE/html5blank/src/sass
+         /var/folders/88/c45n5l_j5fg3qc4wkj267zm80000gn/T/gulp-ruby-sass
+        on line 15 of /var/folders/88/c45n5l_j5fg3qc4wkj267zm80000gn/T/gulp-ruby-sass/style.scss
+
+10: 
+11: // Normalize.css > already checked for scss version
+12: //@import "../../bower_components/normalize-scss/normalize";
+13: 
+14: // meyer reset
+15: @import "../../bower_components/meyer-reset/stylesheets/meyer-reset";
+16: 
+17: // Bourbon
+18: @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+19: 
+20: // Neat
+
+Backtrace:
+/var/folders/88/c45n5l_j5fg3qc4wkj267zm80000gn/T/gulp-ruby-sass/style.scss:15
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:45:in `import'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/bin/sass:23:in `load'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/bin/sass:23:in `<main>'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/johannes/.rvm/gems/ruby-2.0.0-p0/bin/ruby_noexec_wrapper:14:in `<main>'
 */
-/**
- * partials/reset
- * ---
- * Reset file
- * NOTE: also `normalize.css` is used
- */
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
-  font-size: 140%;
-  line-height: 1.5;
-  color: #444444;
-  background-color: white;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-a {
-  color: #444444;
-  text-decoration: none;
-}
-a:focus, a:hover {
-  text-decoration: underline;
-}
-
-input[type="text"],
-input[type="search"] {
-  font-size: inherit;
-  line-height: inherit;
-}
-
-::selection {
-  background-color: #04a4cc;
-  color: white;
-  text-shadow: none;
-}
-
-/**
- * partials/wordpress
- * ---
- * Wordpess core classes
- */
-/**
- * Alignment
- */
-.alignnone {
-  margin: 5px 15px 15px 0;
-}
-
-.aligncenter {
-  display: block;
-  margin: 5px auto;
-}
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px;
-  margin: 5px 0 15px 15px;
-}
-
-.alignleft {
-  float: left;
-  margin: 5px 15px 15px 0;
-}
-
-/**
- * Gallery & images
- */
-.wp-caption {
-  background: white;
-  border: thin solid #F0F0F0;
-  max-width: 95%;
-  padding: 5px 5px;
-  text-align: center;
-}
-.wp-caption img {
-  width: auto;
-  max-width: 98.5%;
-  height: auto;
-  border: 0 none;
-  padding: 0;
-  margin: 0;
-}
-
-.wp-caption .wp-caption-text,
-.gallery-caption {
-  margin: 0;
-  padding: 0 5px 5px;
-  font-size: 140%;
-  line-height: 1.5;
-}
-
-/**
- * partials/utils
- * ---
- * Utils classes
- */
-.clear:before, .clear:after {
-  content: " ";
-  display: table;
-}
-.clear:after {
-  clear: both;
-}
-
-.reset-box {
-  padding: 0;
-  margin: 0;
-}
-
-/**
- * partials/wrapper
- * ---
- */
-.wrapper {
-  max-width: 1280px;
-  padding: 0 15px;
-  margin: 0 auto;
-  position: relative;
-}
-
-/**
- * partial/header
- * ---
- */
-/**
- * partials/nav
- * ---
- * Menus
- */
-/**
- * partials/sidebar
- * ---
- */
-/**
- * partials/footer
- * ---
- */
-/**
- * partials/print
- * ---
- * Print version
- * (from https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css)
- */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../bower_components/meyer-reset/stylesheets/meyer-reset.\A        Load paths:\A          /Users/johannes/Documents/CODE/html5blank/src/sass\A          /var/folders/88/c45n5l_j5fg3qc4wkj267zm80000gn/T/gulp-ruby-sass\A         on line 15 of /var/folders/88/c45n5l_j5fg3qc4wkj267zm80000gn/T/gulp-ruby-sass/style.scss\A \A 10: \A 11: // Normalize.css > already checked for scss version\A 12: //@import \"../../bower_components/normalize-scss/normalize\";\A 13: \A 14: // meyer reset\A 15: @import \"../../bower_components/meyer-reset/stylesheets/meyer-reset\";\A 16: \A 17: // Bourbon\A 18: @import \"../../bower_components/bourbon/app/assets/stylesheets/bourbon\";\A 19: \A 20: // Neat"; }
