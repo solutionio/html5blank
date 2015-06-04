@@ -18,11 +18,11 @@
 
 // pesticide layout debug helper
 $pesticide-debug: true !default;
-@import "imports/pesticide";
+@import "_assets/pesticide";
 
 // Global
-@import "imports/variables";
-@import "imports/mixins";
+@import "_assets/variables";
+@import "_assets/mixins";
 
 // Modules
 
