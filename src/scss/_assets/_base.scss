@@ -1,0 +1,134 @@
+/*------------------------------------*\
+    Base Styles
+\*------------------------------------*/
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: $grey;
+    font-family: "ff-tisa-sans-web-pro", Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+h1, h2, h3, p, a {
+    .wf-loading & {
+        visibility: hidden;
+    }
+
+    .wf-active & {
+        visibility: visible;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.is-hidden {
+    opacity: 0;
+}
+
+.wrap--slider.is-hidden {
+    position: absolute;
+    top: 0;
+}
+
+.is-active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.fadeout {
+    animation: fadeout .75s ease-in-out;
+}
+
+.fadein {
+    animation: fadein .75s ease-in-out;
+}
+
+.wrap--slider.fadein {
+    position: static;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.wrap--slider,
+.wrap--sliders{
+    position: relative;
+}
+
+.wrap--desc {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include breakpoint(bp2) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.site-nav {
+    text-align: center;
+
+    > li {
+        width: 100%;
+        max-width: 165px;
+        margin-right: .7rem;
+    }
+}
+
+.alpha,
+.beta {
+    font-family: "adelle", Georgia, serif;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.alpha {
+    font-size: 2.7rem;
+
+    @include breakpoint(bp2) {
+        font-size: 2.2rem;
+    }
+}
+
+.beta {
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+
+    @include breakpoint(bp2) {
+        font-size: 3rem;
+    }
+}
+
+p {
+    margin-bottom: 3.5rem;
+    text-align: center;
+
+    > a {
+        display: inline-block;
+        color: $grey; 
+        border-bottom: 1px solid #d0d0d0; 
+
+        &:hover, &:focus {
+            border-bottom-color: $grey;
+        }
+    }
+}
+
+.app-icon {
+    display: block;
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 2rem;
+}
