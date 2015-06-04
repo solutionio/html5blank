@@ -72,7 +72,7 @@ gulp.task( "copy", function() {
 
 /** CSS Preprocessors */
 gulp.task( "sass", function () {
-	return gulp.src( "src/sass/style.scss" )
+	return gulp.src( "src/scss/style.scss" )
 		.pipe( $.rubySass({
 			style: "expanded",
 			precision: 10
@@ -151,7 +151,7 @@ gulp.task( "watch", [ "template", "styles", "jshint" ], function() {
 	/** Watch for autoprefix */
 	gulp.watch( [
 		"src/css/*.css",
-		"src/sass/**/*.scss"
+		"src/scss/**/*.scss"
 	], [ "styles" ] );
 
 	/** Watch for JSHint */
