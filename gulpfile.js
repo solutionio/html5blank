@@ -72,7 +72,7 @@ gulp.task( "copy", function() {
 
 /** CSS Preprocessors */
 gulp.task( "sass", function () {
-	return gulp.src( "src/scss/style.scss" )
+	return gulp.src( "src/scss/_style.scss" )
 		.pipe( $.rubySass({
 			style: "expanded",
 			precision: 10
