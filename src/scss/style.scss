@@ -13,6 +13,9 @@
 // Bourbon
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 
+// Bitters
+@import "base/base";
+
 // Neat
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 
@@ -20,8 +23,8 @@
 
 // Utilities
 // Sass tools and helpers used across the project.
-@import "utils/variables";
-@import "utils/mixins";
+//@import "utils/variables";
+//@import "utils/mixins";
 
 // pesticide layout debug helper
 $pesticide-debug: true !default;
@@ -31,15 +34,11 @@ $pesticide-debug: true !default;
 // External libraries and frameworks
 //@import 'sass/vendors/normalize';
 
-// Base
-// Holds what we might call the boilerplate code for the project.
-@import "base/base";
-
 // Layout
 // Contains everything that takes part in laying out the theme
-@import "layout/layout";
+//@import "layout/layout";
 
 // Components
 // For smaller, less global components that do not belong in /layout
-@import "components/header";
-@import "components/footer";
+//@import "components/header";
+//@import "components/footer";
