@@ -9,8 +9,6 @@ var gulp = require( "gulp" ),
 	uglifySrc = [
 		/** Modernizr */
 		"src/bower_components/modernizr/modernizr.js",
-		/** Conditionizr */
-		"src/js/lib/conditionizr-4.3.0.min.js",
 		/** jQuery */
 		"src/bower_components/jquery/dist/jquery.js",
 		/** Page scripts */
