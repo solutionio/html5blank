@@ -8,6 +8,6 @@
     "normalize-scss": "~3.0.2",
     "meyer-reset": "",
     "bourbon": "~4.2.1",
-    "neat": "~1.7.1"
+    "susy": "~2.2.5"
   }
 }

@@ -16,27 +16,24 @@
 // Grid Settings
 @import "base/grid-settings";
 
-// Neat
-@import "../bower_components/neat/app/assets/stylesheets/neat";
+// Susy
+@import "../bower_components/susy/sass/susy/susy";
 
 // pesticide layout debug helper
 $pesticide-debug: true !default;
-@import "utils/pesticide";
+//@import "utils/pesticide";
 
 // Bitters
 @import "base/base";
 
-// Components
-// For smaller, less global components that do not belong in /layout
-//@import "components/components";
-
 // Layout
-// Contains everything that takes part in laying out the theme
-@import "layout/layout";
+@import "base/layout";
 
+// Utils
+@import "utils/mixins";
 
-
-
-
-
-
+// Modules
+@import "modules/global";
+@import "modules/header";
+@import "modules/nav";
+@import "modules/footer";
