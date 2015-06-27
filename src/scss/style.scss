@@ -7,14 +7,14 @@
 // Normalize.scss
 @import "../bower_components/normalize-scss/normalize";
 
-// meyer reset
-//@import "../bower_components/meyer-reset/stylesheets/meyer-reset";
-
 // Bourbon
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 
-// Susy
-@import "../bower_components/susy/sass/susy";
+// Grid Settings
+@import "base/grid-settings";
+
+// Neat
+@import "../bower_components/neat/app/assets/stylesheets/neat";
 
 // pesticide layout debug helper
 $pesticide-debug: true !default;
@@ -23,16 +23,13 @@ $pesticide-debug: true !default;
 // Bitters
 @import "base/base";
 
-// Layout
-@import "base/layout";
-
 // Utils
 @import "utils/mixins";
 @import "utils/breakpoints";
-@import "utils/grid";
 
 // Modules
 @import "modules/global";
 @import "modules/header";
 @import "modules/nav";
+@import "modules/grid";
 @import "modules/footer";
