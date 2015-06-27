@@ -8,6 +8,7 @@
     "normalize-scss": "~3.0.2",
     "meyer-reset": "",
     "bourbon": "~4.2.1",
-    "susy": "~2.2.5"
+    "susy": "~2.2.5",
+    "swiper": "~3.0.7"
   }
 }

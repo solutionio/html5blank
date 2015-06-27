@@ -13,11 +13,8 @@
 // Bourbon
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 
-// Grid Settings
-@import "base/grid-settings";
-
 // Susy
-@import "../bower_components/susy/sass/susy/susy";
+@import "../bower_components/susy/sass/susy";
 
 // pesticide layout debug helper
 $pesticide-debug: true !default;
@@ -31,6 +28,8 @@ $pesticide-debug: true !default;
 
 // Utils
 @import "utils/mixins";
+@import "utils/breakpoints";
+@import "utils/grid";
 
 // Modules
 @import "modules/global";
